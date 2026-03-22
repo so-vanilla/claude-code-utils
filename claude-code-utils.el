@@ -27,12 +27,10 @@
 ;;; Commentary:
 
 ;; claude-code-utils provides utility packages for Claude Code:
-;; - Modeline: Display session information in the modeline
 ;; - Session Status: Track and display per-perspective session state
 
 ;;; Code:
 
-(require 'claude-code-utils-modeline)
 (require 'claude-code-utils-session-status)
 
 (provide 'claude-code-utils)
