@@ -1,0 +1,26 @@
+#+TITLE: claude-code-utils
+#+AUTHOR: Shuto Omura
+
+Emacs utility packages for [[https://github.com/anthropics/claude-code][Claude Code]].
+
+* Features
+
+- *Modeline*: Display session information (model, context, cost, duration) in the modeline
+- *Session Status*: Track per-perspective session state (working/waiting/idle)
+
+* Installation
+
+** Nix flake
+
+#+begin_src nix
+{
+  inputs.claude-code-utils = {
+    url = "github:so-vanilla/claude-code-utils";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+}
+#+end_src
+
+* License
+
+GPL-3.0
